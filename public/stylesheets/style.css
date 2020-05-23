@@ -14,17 +14,28 @@
     border: 0.75vh solid #293D5A;
     box-shadow: 3vh 3vh 3vh #01050B;
     height: 20vh;
-    width: 20vh; }
+    width: 20vh;
+    position: absolute; }
   .landing .load {
-    position: absolute;
-    transform: translateY(0vh);
-    transition: transform 1.25s;
-    transition-timing-function: ease-in-out;
+    transform: translateY(0vh) !important;
+    transition: transform 1.25s ease-in-out;
     border-radius: 20vh;
     border: 0.75vh solid #293D5A;
     box-shadow: 3vh 3vh 3vh #01050B;
     height: 20vh;
     width: 20vh; }
+  .landing #intro {
+    position: absolute;
+    transform: translateY(100vh);
+    visibility: hidden;
+    opacity: 0; }
+    .landing #intro p {
+      color: white; }
+  .landing .textLoad {
+    transform: translateY(20vh) !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    transition: opacity 5s, visibility 5s, transform 2.5s; }
 
 .about {
   background-color: #12162d;
