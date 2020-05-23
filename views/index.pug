@@ -1,5 +1,14 @@
 doctype html
 head
-  link(rel='stylesheet', href='/stylesheets/style.css')
-body
-  h1 Welcome
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  link(rel='stylesheet', type="text/css", href='/stylesheets/normalize.css')
+  link(rel='stylesheet', type="text/css", href='/stylesheets/style.css')
+body(onload="main()")
+  .wrapper
+    .landing
+      img(id="img", src="/images/john.jpg")
+      
+    .about
+      h1 yoyo
+    
+  script(defer src='/scripts/main.js').
