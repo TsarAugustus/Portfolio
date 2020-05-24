@@ -4,7 +4,8 @@
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  transform: translateY(100vh); }
   #landing img {
     transform: translateY(100vh);
     border-radius: 20vh;
@@ -34,33 +35,54 @@
       font-size: 2em;
       color: #ccd6f6; }
 
-.showLanding #landing img {
-  transform: translateY(-10vh) !important;
+.showLanding #landing {
+  transform: translateY(0vh) !important;
+  transition: transform 1.5s ease-in-out; }
+  .showLanding #landing img {
+    transform: translateY(-10vh) !important;
+    transition: transform 1.5s ease-in-out; }
+  .showLanding #landing #intro {
+    transform: translateY(10vh) !important;
+    transition: transform 1.7s ease-in-out; }
+    .showLanding #landing #intro #js-txt {
+      color: #F0DB4F; }
+  .showLanding #landing #social {
+    transform: translateY(30vh) !important;
+    transition: transform 1.9s ease-in-out; }
+
+.dismissLanding {
+  transform: translateY(100vh) !important;
+  transition: transform 1.5s ease-in-out; }
+  .dismissLanding img {
+    transform: translateY(100vh) !important;
+    transition: transform 1.5s ease-in-out; }
+  .dismissLanding #intro {
+    transform: translateY(100vh) !important;
+    transition: transform 1.7s ease-in-out; }
+    .dismissLanding #intro #js-txt {
+      color: #F0DB4F; }
+  .dismissLanding #social {
+    transform: translateY(100vh) !important;
+    transition: transform 1.9s ease-in-out; }
+
+#about {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(100vh); }
+  #about #skills h1 {
+    color: white; }
+  #about #skills p {
+    color: white; }
+
+.showAbout #about {
+  transform: translateY(-100vh) !important;
   transition: transform 1.5s ease-in-out; }
 
-.showLanding #landing #intro {
-  transform: translateY(10vh) !important;
-  transition: transform 1.7s ease-in-out; }
-  .showLanding #landing #intro #js-txt {
-    color: #F0DB4F; }
-
-.showLanding #landing #social {
-  transform: translateY(30vh) !important;
-  transition: transform 1.9s ease-in-out; }
-
-.dismissAnimation img {
+.dismissAbout {
   transform: translateY(100vh) !important;
   transition: transform 1.5s ease-in-out; }
-
-.dismissAnimation #intro {
-  transform: translateY(100vh) !important;
-  transition: transform 1.7s ease-in-out; }
-  .dismissAnimation #intro #js-txt {
-    color: #F0DB4F; }
-
-.dismissAnimation #social {
-  transform: translateY(100vh) !important;
-  transition: transform 1.9s ease-in-out; }
 
 * {
   overflow: hidden; }
