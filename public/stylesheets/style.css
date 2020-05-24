@@ -1,13 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap");
-* {
-  overflow: hidden; }
-
-.nav {
-  background-color: #12162d; }
-
 #landing {
-  background-color: #12162d;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -41,21 +34,36 @@
       font-size: 2em;
       color: #ccd6f6; }
 
-.showAnimation img {
+.showLanding #landing img {
   transform: translateY(-10vh) !important;
-  transition: transform 1.5s ease-in-out;
-  border-radius: 20vh;
-  border: 0.75vh solid #293D5A;
-  box-shadow: 3vh 3vh 3vh #01050B;
-  height: 20vh;
-  width: 20vh; }
+  transition: transform 1.5s ease-in-out; }
 
-.showAnimation #intro {
+.showLanding #landing #intro {
   transform: translateY(10vh) !important;
   transition: transform 1.7s ease-in-out; }
-  .showAnimation #intro #js-txt {
+  .showLanding #landing #intro #js-txt {
     color: #F0DB4F; }
 
-.showAnimation #social {
+.showLanding #landing #social {
   transform: translateY(30vh) !important;
   transition: transform 1.9s ease-in-out; }
+
+.dismissAnimation img {
+  transform: translateY(100vh) !important;
+  transition: transform 1.5s ease-in-out; }
+
+.dismissAnimation #intro {
+  transform: translateY(100vh) !important;
+  transition: transform 1.7s ease-in-out; }
+  .dismissAnimation #intro #js-txt {
+    color: #F0DB4F; }
+
+.dismissAnimation #social {
+  transform: translateY(100vh) !important;
+  transition: transform 1.9s ease-in-out; }
+
+* {
+  overflow: hidden; }
+
+#wrapper {
+  background-color: #12162d; }

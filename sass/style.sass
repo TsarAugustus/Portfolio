@@ -1,62 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap')
 
+//located in current dir
+@import 'landing'
+@import 'showLanding'
+@import 'dismissAnimation'
+
+
 *
   overflow: hidden
 // 293D5A
 .nav
-  background-color: #12162d
+  // background-color: #12162d
 
-//This is all the pre states of the landing page
-#landing
+#wrapper
   background-color: #12162d
-  height: 100vh
-  display: flex
-  justify-content: center
-  align-items: center
-  img
-    transform: translateY(100vh)
-    border-radius: 20vh
-    border: 0.75vh solid #293D5A
-    box-shadow: 3vh 3vh 3vh #01050B
-    height: 20vh
-    width: 20vh
-    position: absolute
-  #intro
-    position: absolute
-    max-width: 95%
-    -webkit-font-smoothing: antialiased
-    transform: translateY(100vh)
-    p
-      overflow-y: hidden
-      font-family: 'Roboto Mono' !important
-      font-size: 1em
-      font-weight: 300
-      color: #ccd6f6
-      text-shadow: .1em .1em .1em black
-  #social
-    transform: translateY(100vh)
-    position: absolute
-    i
-      margin-left: 0.5em
-      margin-right: 0.5em
-      font-size: 2em
-      color: #ccd6f6
-
-.showAnimation
-  img
-    transform: translateY(-10vh) !important
-    transition: transform 1.5s ease-in-out
-    border-radius: 20vh
-    border: 0.75vh solid #293D5A
-    box-shadow: 3vh 3vh 3vh #01050B
-    height: 20vh
-    width: 20vh
-  #intro
-    #js-txt
-      color: #F0DB4F
-    transform: translateY(10vh) !important
-    transition: transform 1.7s ease-in-out
-  #social
-    transform: translateY(30vh) !important
-    transition: transform 1.9s ease-in-out
