@@ -70,19 +70,60 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(100vh); }
-  #about #skills h1 {
-    color: white; }
-  #about #skills p {
-    color: white; }
+  transform: translateY(100vh);
+  transition: transform 1.5s ease-in-out; }
+  #about #skills {
+    transform: translateY(100vh);
+    transition: transform 1.5s ease-in-out;
+    position: absolute; }
+    #about #skills h1 {
+      color: white; }
+    #about #skills p {
+      color: white; }
+  #about #travel {
+    transform: translateY(100vh);
+    transition: transform 1.5s ease-in-out;
+    position: absolute;
+    width: 50%;
+    min-height: 2em; }
+    #about #travel i {
+      left: -20%;
+      position: absolute;
+      font-size: 2em;
+      color: white; }
+
+@-webkit-keyframes travel {
+  0% {
+    left: -20%; }
+  50% {
+    left: 110%; }
+  100% {
+    left: -20%; } }
 
 .showAbout #about {
   transform: translateY(-100vh) !important;
   transition: transform 1.5s ease-in-out; }
+  .showAbout #about #skills {
+    transform: translateY(-10vh) !important;
+    transition: transform 1.5s ease-in-out; }
+  .showAbout #about #travel {
+    transform: translateY(10vh) !important;
+    transition: transform 1.5s ease-in-out; }
+  .showAbout #about .animate i {
+    animation: travel 5s linear infinite alternate; }
 
 .dismissAbout {
   transform: translateY(100vh) !important;
   transition: transform 1.5s ease-in-out; }
+  .dismissAbout #about {
+    transform: translateY(100vh) !important;
+    transition: transform 1.5s ease-in-out; }
+    .dismissAbout #about #skills {
+      transform: translateY(100vh) !important;
+      transition: transform 1.7s ease-in-out; }
+    .dismissAbout #about #travel {
+      transform: translateY(100vh) !important;
+      transition: transform 1.9s ease-in-out; }
 
 * {
   overflow: hidden; }
