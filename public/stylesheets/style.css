@@ -1,14 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap");
 * {
-  overflow-x: hidden; }
+  overflow: hidden; }
 
-.landing {
+.nav {
+  background-color: #12162d; }
+
+#landing {
   background-color: #12162d;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center; }
-  .landing img {
+  #landing img {
     transform: translateY(100vh);
     border-radius: 20vh;
     border: 0.75vh solid #293D5A;
@@ -16,28 +20,42 @@
     height: 20vh;
     width: 20vh;
     position: absolute; }
-  .landing .load {
-    transform: translateY(0vh) !important;
-    transition: transform 1.25s ease-in-out;
-    border-radius: 20vh;
-    border: 0.75vh solid #293D5A;
-    box-shadow: 3vh 3vh 3vh #01050B;
-    height: 20vh;
-    width: 20vh; }
-  .landing #intro {
+  #landing #intro {
     position: absolute;
+    max-width: 95%;
+    -webkit-font-smoothing: antialiased;
+    transform: translateY(100vh); }
+    #landing #intro p {
+      overflow-y: hidden;
+      font-family: 'Roboto Mono' !important;
+      font-size: 1em;
+      font-weight: 300;
+      color: #ccd6f6;
+      text-shadow: .1em .1em .1em black; }
+  #landing #social {
     transform: translateY(100vh);
-    visibility: hidden;
-    opacity: 0; }
-    .landing #intro p {
-      color: white; }
-  .landing .textLoad {
-    transform: translateY(20vh) !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    transition: opacity 5s, visibility 5s, transform 2.5s; }
+    position: absolute; }
+    #landing #social i {
+      margin-left: 0.5em;
+      margin-right: 0.5em;
+      font-size: 2em;
+      color: #ccd6f6; }
 
-.about {
-  background-color: #12162d;
-  height: 100vh;
-  width: 100vw; }
+.showAnimation img {
+  transform: translateY(-10vh) !important;
+  transition: transform 1.5s ease-in-out;
+  border-radius: 20vh;
+  border: 0.75vh solid #293D5A;
+  box-shadow: 3vh 3vh 3vh #01050B;
+  height: 20vh;
+  width: 20vh; }
+
+.showAnimation #intro {
+  transform: translateY(10vh) !important;
+  transition: transform 1.7s ease-in-out; }
+  .showAnimation #intro #js-txt {
+    color: #F0DB4F; }
+
+.showAnimation #social {
+  transform: translateY(30vh) !important;
+  transition: transform 1.9s ease-in-out; }

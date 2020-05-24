@@ -3,14 +3,20 @@ head
   meta(name="viewport", content="width=device-width, initial-scale=1.0")
   link(rel='stylesheet', type="text/css", href='/stylesheets/normalize.css')
   link(rel='stylesheet', type="text/css", href='/stylesheets/style.css')
+  script(src="https://kit.fontawesome.com/c59855d5b9.js")
 body(onload="main()")
   .wrapper
-    .landing
+    .nav
+      a(id="landingLink") Landing
+      a(id="aboutLink") About
+    #landing
       img(id="img", src="/images/john.jpg")
       #intro 
-        p Heyo
-      
-    .about
-      h1 yoyo
+        p Hi there.
+        p My Name is John.
+        p I have a passion for for #[span#js-txt Javascript] and the web.
+      #social
+        i.fab.fa-github-square
+        i.fab.fa-linkedin
     
   script(defer src='/scripts/main.js').
