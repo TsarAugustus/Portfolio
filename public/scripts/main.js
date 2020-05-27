@@ -7,6 +7,7 @@ const about = document.getElementById('about');
 const travel = document.getElementById('travel');
 
 landingLink.onclick = function() {
+  console.log('landing')
   wrapper.classList.add('showLanding');
   landing.classList.remove('dismissLanding');
 
@@ -17,6 +18,7 @@ landingLink.onclick = function() {
 }
 
 aboutLink.onclick = function() {
+  console.log('about')
   wrapper.classList.add('showAbout');
   about.classList.remove('dismissAbout');
 

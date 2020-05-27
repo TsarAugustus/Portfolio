@@ -1,10 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap");
-#landing {
-  height: 100vh;
+#table {
+  border: 1px solid white;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 29%;
+  height: 100vh; }
+  #table ul li {
+    font-family: 'Roboto Mono';
+    font-size: 1em;
+    color: white; }
+
+#landing {
+  border: 1px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 100vh;
   transform: translateY(100vh); }
   #landing img {
     transform: translateY(100vh);
@@ -66,10 +80,12 @@
     transition: transform 1.9s ease-in-out; }
 
 #about {
-  height: 100vh;
+  margin-left: 30vw;
+  border: 1px solid red;
   display: flex;
-  justify-content: center;
   align-items: center;
+  width: 70%;
+  height: 100vh;
   transform: translateY(100vh);
   transition: transform 1.5s ease-in-out; }
   #about #skills {
@@ -129,4 +145,6 @@
   overflow: hidden; }
 
 #wrapper {
+  display: flex;
+  flex-wrap: wrap;
   background-color: #12162d; }
