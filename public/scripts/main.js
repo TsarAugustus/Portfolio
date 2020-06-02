@@ -25,12 +25,6 @@ aboutLink.onclick = function() {
   landing.classList.add('dismissLanding');
   wrapper.classList.remove('showLanding');
 
-  setTimeout(animateTravel, 2000)
-
-}
-
-function animateTravel() {
-  travel.classList.add('animate');
 }
 
 function main() {

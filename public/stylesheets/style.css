@@ -1,19 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap");
 #table {
-  border: 1px solid white;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 29%;
   height: 100vh; }
   #table ul li {
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
     font-family: 'Roboto Mono';
     font-size: 1em;
     color: white; }
 
 #landing {
-  border: 1px solid green;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,7 +83,6 @@
 
 #about {
   margin-left: 30vw;
-  border: 1px solid red;
   display: flex;
   align-items: center;
   width: 70%;
@@ -108,14 +109,6 @@
       font-size: 2em;
       color: white; }
 
-@-webkit-keyframes travel {
-  0% {
-    left: -20%; }
-  50% {
-    left: 110%; }
-  100% {
-    left: -20%; } }
-
 .showAbout #about {
   transform: translateY(-100vh) !important;
   transition: transform 1.5s ease-in-out; }
@@ -125,8 +118,6 @@
   .showAbout #about #travel {
     transform: translateY(10vh) !important;
     transition: transform 1.5s ease-in-out; }
-  .showAbout #about .animate i {
-    animation: travel 5s linear infinite alternate; }
 
 .dismissAbout {
   transform: translateY(100vh) !important;
